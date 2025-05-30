@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XML Diff Checker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1>XML Difference Checker</h1>
+    <form id="uploadForm">
+      <label>Select XML File 1:</label>
+      <input type="file" id="file1" accept=".xml" required />
+
+      <label>Select XML File 2:</label>
+      <input type="file" id="file2" accept=".xml" required />
+
+      <button type="submit">Compare</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
